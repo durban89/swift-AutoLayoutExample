@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sxK-82-aKU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,57 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Dynamic Stack View Controller-->
+        <scene sceneID="v1j-St-nbB">
+            <objects>
+                <viewController id="sxK-82-aKU" customClass="DynamicStackViewController" customModule="AutoLayoutExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fns-Dp-wqB"/>
+                        <viewControllerLayoutGuide type="bottom" id="BRc-9z-xL4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lgg-ra-SBM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nVh-vK-qGn">
+                                <rect key="frame" x="16" y="20" width="343" height="627"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxG-zK-zMa">
+                                        <rect key="frame" x="148" y="553" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="addEntry:" destination="sxK-82-aKU" eventType="touchUpInside" id="Llx-1Y-LUl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mTC-qz-iyg">
+                                <rect key="frame" x="16" y="233" width="343" height="200"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mTC-qz-iyg" firstAttribute="trailing" secondItem="nVh-vK-qGn" secondAttribute="trailing" id="LrS-OL-zJy"/>
+                            <constraint firstItem="mTC-qz-iyg" firstAttribute="top" secondItem="nVh-vK-qGn" secondAttribute="top" id="NLU-Jw-all"/>
+                            <constraint firstItem="nVh-vK-qGn" firstAttribute="trailing" secondItem="Lgg-ra-SBM" secondAttribute="trailingMargin" id="UPb-Eh-LWS"/>
+                            <constraint firstItem="mTC-qz-iyg" firstAttribute="width" secondItem="nVh-vK-qGn" secondAttribute="width" id="W7g-cb-xF0"/>
+                            <constraint firstItem="mTC-qz-iyg" firstAttribute="leading" secondItem="nVh-vK-qGn" secondAttribute="leading" id="pu7-R0-Bu9"/>
+                            <constraint firstItem="BRc-9z-xL4" firstAttribute="top" secondItem="nVh-vK-qGn" secondAttribute="bottom" constant="20" id="sTt-Za-nD8"/>
+                            <constraint firstItem="mTC-qz-iyg" firstAttribute="bottom" secondItem="nVh-vK-qGn" secondAttribute="bottom" id="tTY-ay-4FN"/>
+                            <constraint firstItem="nVh-vK-qGn" firstAttribute="leading" secondItem="Lgg-ra-SBM" secondAttribute="leadingMargin" id="ttH-UP-PYV"/>
+                            <constraint firstAttribute="bottom" secondItem="nVh-vK-qGn" secondAttribute="bottom" constant="20" id="uhA-wB-rsO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="nVh-vK-qGn" id="uec-Xe-ZLQ"/>
+                        <outlet property="stackView" destination="mTC-qz-iyg" id="F5V-H1-mQU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lE-em-C0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-218" y="-1445"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -56,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-711" y="-717"/>
+            <point key="canvasLocation" x="-574" y="-362"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="42b-Su-wF1">

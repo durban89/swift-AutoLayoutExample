@@ -14,6 +14,7 @@
 		5FC132C41EE04958001EE59A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FC132C21EE04958001EE59A /* LaunchScreen.storyboard */; };
 		5FC132CF1EE04958001EE59A /* AutoLayoutExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC132CE1EE04958001EE59A /* AutoLayoutExampleTests.swift */; };
 		5FC132DA1EE04958001EE59A /* AutoLayoutExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC132D91EE04958001EE59A /* AutoLayoutExampleUITests.swift */; };
+		5FC132E81EE2BEC0001EE59A /* DynamicStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC132E71EE2BEC0001EE59A /* DynamicStackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5FC132D51EE04958001EE59A /* AutoLayoutExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC132D91EE04958001EE59A /* AutoLayoutExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutExampleUITests.swift; sourceTree = "<group>"; };
 		5FC132DB1EE04958001EE59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC132E71EE2BEC0001EE59A /* DynamicStackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicStackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				5FC132C01EE04958001EE59A /* Assets.xcassets */,
 				5FC132C21EE04958001EE59A /* LaunchScreen.storyboard */,
 				5FC132C51EE04958001EE59A /* Info.plist */,
+				5FC132E71EE2BEC0001EE59A /* DynamicStackViewController.swift */,
 			);
 			path = AutoLayoutExample;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FC132BC1EE04958001EE59A /* ViewController.swift in Sources */,
+				5FC132E81EE2BEC0001EE59A /* DynamicStackViewController.swift in Sources */,
 				5FC132BA1EE04958001EE59A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +518,7 @@
 				5FC132E01EE04958001EE59A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FC132E11EE04958001EE59A /* Build configuration list for PBXNativeTarget "AutoLayoutExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				5FC132E31EE04958001EE59A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FC132E41EE04958001EE59A /* Build configuration list for PBXNativeTarget "AutoLayoutExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				5FC132E61EE04958001EE59A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
