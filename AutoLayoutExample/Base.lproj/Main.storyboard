@@ -500,6 +500,44 @@
             <point key="canvasLocation" x="0.80000000000000004" y="706.59670164917543"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="r6s-yd-OED">
+            <objects>
+                <viewController id="s3o-hN-CgK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ixL-gL-oAT"/>
+                        <viewControllerLayoutGuide type="bottom" id="6jl-We-0K2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fzq-tJ-cFb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmQ-EB-OdM" userLabel="Yellow View">
+                                <rect key="frame" x="16" y="40" width="167.5" height="607"/>
+                                <color key="backgroundColor" red="0.74503308534622192" green="0.7906639575958252" blue="0.074801988899707794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pS-a6-qu8" userLabel="Green View">
+                                <rect key="frame" x="191.5" y="40" width="167.5" height="607"/>
+                                <color key="backgroundColor" red="0.10059436410665512" green="0.6216767430305481" blue="0.087905861437320709" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6jl-We-0K2" firstAttribute="top" secondItem="7pS-a6-qu8" secondAttribute="bottom" constant="20" id="2yX-9D-pYe"/>
+                            <constraint firstItem="vmQ-EB-OdM" firstAttribute="leading" secondItem="Fzq-tJ-cFb" secondAttribute="leadingMargin" id="4xl-L6-a4d"/>
+                            <constraint firstItem="7pS-a6-qu8" firstAttribute="leading" secondItem="vmQ-EB-OdM" secondAttribute="trailing" constant="8" symbolic="YES" id="6w5-Bx-Npw"/>
+                            <constraint firstItem="7pS-a6-qu8" firstAttribute="trailing" secondItem="Fzq-tJ-cFb" secondAttribute="trailingMargin" id="DoW-1G-z0L"/>
+                            <constraint firstItem="vmQ-EB-OdM" firstAttribute="top" secondItem="ixL-gL-oAT" secondAttribute="bottom" constant="20" id="L8i-tl-kKE"/>
+                            <constraint firstItem="6jl-We-0K2" firstAttribute="top" secondItem="vmQ-EB-OdM" secondAttribute="bottom" constant="20" id="Ld8-Mm-LHz"/>
+                            <constraint firstItem="7pS-a6-qu8" firstAttribute="top" secondItem="ixL-gL-oAT" secondAttribute="bottom" constant="20" id="R8s-ue-ujd"/>
+                            <constraint firstItem="7pS-a6-qu8" firstAttribute="width" secondItem="vmQ-EB-OdM" secondAttribute="width" id="oZe-Zt-4gH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNN-OU-VPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.80000000000000004" y="1396.5517241379312"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="e6i-4R-PhB">
             <objects>
                 <viewController id="iLM-96-udN" sceneMemberID="viewController">
