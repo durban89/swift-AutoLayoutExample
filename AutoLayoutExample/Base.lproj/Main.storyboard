@@ -958,11 +958,64 @@
                     <view key="view" contentMode="scaleToFill" id="yY7-uG-0SS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2NK-J4-WhM" userLabel="Leading Dummy View">
+                                <rect key="frame" x="16" y="647" width="7.5" height="0.0"/>
+                                <color key="backgroundColor" red="0.94575554132461548" green="0.97236377000808716" blue="0.047508247196674347" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="sLD-mr-EfC"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbp-PG-mqs" userLabel="Short Button">
+                                <rect key="frame" x="23.5" y="617" width="160" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Short"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07Y-lr-Lxc" userLabel="Center Dummy View">
+                                <rect key="frame" x="183.5" y="647" width="8" height="0.0"/>
+                                <color key="backgroundColor" red="0.51455956697463989" green="0.084482677280902863" blue="0.6164860725402832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="sZ2-3g-APY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Pn-jP-gqC" userLabel="Trailing Dummy View">
+                                <rect key="frame" x="351.5" y="647" width="7.5" height="0.0"/>
+                                <color key="backgroundColor" red="0.096607802150000005" green="1" blue="0.064736000449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="zmP-PQ-wQp"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph6-cp-Jsc" userLabel="Long Button">
+                                <rect key="frame" x="191.5" y="617" width="160" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Much,Much Longer Button Title"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Pn-jP-gqC" firstAttribute="leading" secondItem="ph6-cp-Jsc" secondAttribute="trailing" id="1pp-Rs-Tdl"/>
+                            <constraint firstItem="bLG-t4-rGt" firstAttribute="top" secondItem="0Pn-jP-gqC" secondAttribute="bottom" constant="20" id="6pv-Oe-MJa"/>
+                            <constraint firstItem="2NK-J4-WhM" firstAttribute="width" secondItem="07Y-lr-Lxc" secondAttribute="width" id="AbY-io-MKf"/>
+                            <constraint firstItem="ph6-cp-Jsc" firstAttribute="leading" secondItem="07Y-lr-Lxc" secondAttribute="trailing" id="Bmu-jY-ceL"/>
+                            <constraint firstItem="Pbp-PG-mqs" firstAttribute="width" secondItem="ph6-cp-Jsc" secondAttribute="width" id="DQS-BP-hFb"/>
+                            <constraint firstItem="bLG-t4-rGt" firstAttribute="top" secondItem="2NK-J4-WhM" secondAttribute="bottom" constant="20" id="Ers-aJ-5CH"/>
+                            <constraint firstItem="07Y-lr-Lxc" firstAttribute="leading" secondItem="Pbp-PG-mqs" secondAttribute="trailing" id="IJ4-8C-oc1"/>
+                            <constraint firstItem="2NK-J4-WhM" firstAttribute="leading" secondItem="yY7-uG-0SS" secondAttribute="leadingMargin" id="JHh-vt-WDu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Pn-jP-gqC" secondAttribute="trailing" id="KcX-9H-Hun"/>
+                            <constraint firstItem="Pbp-PG-mqs" firstAttribute="leading" secondItem="2NK-J4-WhM" secondAttribute="trailing" id="NqG-dk-4Vw"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="ph6-cp-Jsc" secondAttribute="trailing" id="TIy-C9-5kK"/>
+                            <constraint firstItem="bLG-t4-rGt" firstAttribute="top" secondItem="07Y-lr-Lxc" secondAttribute="bottom" constant="20" id="Uda-t5-Xpb"/>
+                            <constraint firstItem="Pbp-PG-mqs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yY7-uG-0SS" secondAttribute="leadingMargin" id="XDJ-dd-d6D"/>
+                            <constraint firstItem="bLG-t4-rGt" firstAttribute="top" secondItem="ph6-cp-Jsc" secondAttribute="bottom" constant="20" id="Xes-Kh-DEX"/>
+                            <constraint firstItem="bLG-t4-rGt" firstAttribute="top" secondItem="Pbp-PG-mqs" secondAttribute="bottom" constant="20" id="pn2-Cb-br3"/>
+                            <constraint firstItem="ph6-cp-Jsc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Pbp-PG-mqs" secondAttribute="trailing" constant="8" symbolic="YES" id="sy2-lw-6cD"/>
+                            <constraint firstItem="2NK-J4-WhM" firstAttribute="width" secondItem="0Pn-jP-gqC" secondAttribute="width" id="xVr-bZ-8qC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sna-f4-a64" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="0.80000000000000004" y="4248.1259370314847"/>
         </scene>
     </scenes>
     <resources>
