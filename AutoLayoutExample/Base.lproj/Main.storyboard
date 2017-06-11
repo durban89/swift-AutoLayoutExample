@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-346" y="-421"/>
+            <point key="canvasLocation" x="1" y="-717"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="42b-Su-wF1">
@@ -302,6 +302,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3u3-FH-Zrq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="721" y="-717"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZGw-NI-9ik">
+            <objects>
+                <viewController id="VkT-tL-qIF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fdq-gy-VjV"/>
+                        <viewControllerLayoutGuide type="bottom" id="cpi-ct-rwx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GlM-9n-KV0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCJ-Sb-XFe">
+                                <rect key="frame" x="16" y="577" width="343" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Short Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWa-Zm-RqK">
+                                <rect key="frame" x="16" y="615" width="343" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Long Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wCJ-Sb-XFe" firstAttribute="width" secondItem="eWa-Zm-RqK" secondAttribute="width" id="CZ5-df-jPW"/>
+                            <constraint firstItem="eWa-Zm-RqK" firstAttribute="leading" secondItem="GlM-9n-KV0" secondAttribute="leadingMargin" id="EXC-E2-bi7"/>
+                            <constraint firstItem="eWa-Zm-RqK" firstAttribute="top" secondItem="wCJ-Sb-XFe" secondAttribute="bottom" constant="8" symbolic="YES" id="Nsp-5J-ThC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wCJ-Sb-XFe" secondAttribute="trailing" id="PhJ-pG-RNa"/>
+                            <constraint firstItem="wCJ-Sb-XFe" firstAttribute="leading" secondItem="GlM-9n-KV0" secondAttribute="leadingMargin" id="aRS-Io-Myf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eWa-Zm-RqK" secondAttribute="trailing" id="g2K-M3-zhk"/>
+                            <constraint firstItem="cpi-ct-rwx" firstAttribute="top" secondItem="wCJ-Sb-XFe" secondAttribute="bottom" constant="60" id="upL-Eu-AW8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKH-XX-ZiX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="-4"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WDQ-WA-PE2">
