@@ -732,6 +732,52 @@
             <point key="canvasLocation" x="0.80000000000000004" y="3544.6776611694154"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="vJS-ka-WpY">
+            <objects>
+                <viewController id="u2r-Tv-p5N" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cPc-be-jlb"/>
+                        <viewControllerLayoutGuide type="bottom" id="P3t-pW-umx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="400-OT-Uzs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puR-8W-V21">
+                                <rect key="frame" x="16" y="617" width="109" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Short Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqc-3m-DsN">
+                                <rect key="frame" x="133" y="617" width="109" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Middle Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Bv-Ug-dmm" userLabel="Long Button">
+                                <rect key="frame" x="250" y="617" width="109" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Long Button Title"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P3t-pW-umx" firstAttribute="top" secondItem="Fqc-3m-DsN" secondAttribute="bottom" constant="20" id="UPv-6M-a62"/>
+                            <constraint firstItem="puR-8W-V21" firstAttribute="width" secondItem="6Bv-Ug-dmm" secondAttribute="width" id="g1V-ee-Ur5"/>
+                            <constraint firstItem="puR-8W-V21" firstAttribute="width" secondItem="Fqc-3m-DsN" secondAttribute="width" id="gcI-N7-WC7"/>
+                            <constraint firstItem="Fqc-3m-DsN" firstAttribute="leading" secondItem="puR-8W-V21" secondAttribute="trailing" constant="8" symbolic="YES" id="j1f-el-Kyc"/>
+                            <constraint firstItem="6Bv-Ug-dmm" firstAttribute="leading" secondItem="Fqc-3m-DsN" secondAttribute="trailing" constant="8" symbolic="YES" id="nQo-e8-yjr"/>
+                            <constraint firstItem="puR-8W-V21" firstAttribute="leading" secondItem="400-OT-Uzs" secondAttribute="leadingMargin" id="oww-Oq-5zx"/>
+                            <constraint firstItem="P3t-pW-umx" firstAttribute="top" secondItem="6Bv-Ug-dmm" secondAttribute="bottom" constant="20" id="sk9-DA-LAN"/>
+                            <constraint firstItem="P3t-pW-umx" firstAttribute="top" secondItem="puR-8W-V21" secondAttribute="bottom" constant="20" id="urf-qF-sfQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Bv-Ug-dmm" secondAttribute="trailing" id="wwi-zD-APp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OeT-1N-5wR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721" y="3545"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="2CX-e0-Msl">
             <objects>
                 <viewController id="NLR-j7-2by" sceneMemberID="viewController">
@@ -900,6 +946,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HsW-82-Hfx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2209" y="730"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eHl-6x-3o3">
+            <objects>
+                <viewController id="MuO-Ct-dJy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OaC-fo-LqK"/>
+                        <viewControllerLayoutGuide type="bottom" id="bLG-t4-rGt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yY7-uG-0SS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sna-f4-a64" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
